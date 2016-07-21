@@ -92,6 +92,23 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Jl9FHgklBt0" frameborder="0" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SnFYYNqwznY" frameborder="0" allowfullscreen></iframe>
       </div>
+      <div>
+        <a-scene>
+          <a-camera position = "0 0 2">
+          <a-cursor color = "#FFFFF">
+          </a-camera>
+
+          <a-box width="4" height="4" depth="4"
+            position = "3 2 -7" rotation = "0 0 0" scale = "1 1 1"
+            src = "cat.jpg">
+         <a-animation attribute = "rotation" begin = "click" repeat = "indefinite" to   = "0 360 0">
+          </a-animation>
+         </a-box>
+        <a-sky src = "Mountains.jpg">
+        <a-entity id="sound-entity" sound="src: Not_For_Nothing.mp3; autoplay: true; loop: true">
+        </a-entity> 
+    </a-scene>
+      </div>
     </div>
 </body>
 </html>
